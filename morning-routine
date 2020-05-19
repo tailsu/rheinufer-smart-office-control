@@ -1,0 +1,19 @@
+#!/bin/bash
+
+SELF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+pushd "$SELF_DIR"
+
+./send shutter-down.xml
+sleep 90s
+
+./send shutter-stop.xml
+sleep 1s
+
+./send shutter-up.xml
+sleep 0.8s
+./send shutter-stop.xml
+
+./send light-off.xml
+
+
+popd

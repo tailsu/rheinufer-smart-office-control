@@ -1,0 +1,5 @@
+#!/bin/bash
+
+API_ENDPOINT=http://192.168.10.68/DA
+
+curl -sS -d @$1 -H "SOAPAction: http://opcfoundation.org/webservices/XMLDA/1.0/Write" "$API_ENDPOINT" > /dev/null

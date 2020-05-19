@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <Write xmlns="http://opcfoundation.org/webservices/XMLDA/1.0/" ReturnValuesOnReply="true">
+            <Options ReturnErrorText="true" ReturnItemTime="true" ClientRequestHandle="Write-11"/>
+            <ItemList>
+                <Items ItemPath="CEA709 Port.Datapoints.R101.Somfy" ItemName="nvoSunbSet6.function" ClientItemHandle="gen0x0428b598-10">
+                    <Value xsi:type="xsd:int">4</Value>
+                </Items>
+            </ItemList>
+        </Write>
+    </soap:Body>
+</soap:Envelope>
